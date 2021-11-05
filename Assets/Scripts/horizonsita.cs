@@ -35,11 +35,11 @@ public class horizonsita : MonoBehaviour
         // 矢印キー（↑↓）で光量が変わる
         if(Input.GetKey(KeyCode.UpArrow)){
             if(lt.intensity < 500){
-                lt.intensity += 1;
+                lt.intensity += 10;
             }
         }else if(Input.GetKey(KeyCode.DownArrow)){
             if(lt.intensity > 0){
-                lt.intensity -= 1;
+                lt.intensity -= 10;
             }
         } 
 
