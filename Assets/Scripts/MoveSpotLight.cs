@@ -18,23 +18,13 @@ public class MoveSpotLight : MonoBehaviour
         SpotLight = this.gameObject;
         targetPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(address);
     }
-    /*
-    void Update()
-    {
-        if(Input.GetMouseButtonDown(2)){
-            if(count){
-                for(int i=0; i < script.mouse_pos.Length; i++){
-                    Instantiate(targetPrefab, script.mouse_pos[i], Quaternion.identity);
-                    SpotLight.transform.LookAt(script.mouse_pos[i]);
-                }
-                count = false;
-            }
-        }
-    }
-    */
+    
     IEnumerator Delay(){
         for (int i=0; i < script.mouse_pos.Length; i++){
             SpotLight.transform.LookAt(script.mouse_pos[i]);
+            if (i == script.mouse_pos.Length-1){
+                script.mouse_pos = new Vector3[0];
+            }
             yield return new WaitForSeconds(Time.deltaTime);
         }
     }
