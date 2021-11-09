@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class horizonsita : MonoBehaviour
+public class ColorChange : MonoBehaviour
 {
-    public Color color;
     Light lt;
-    
+    public Color color;
     // Start is called before the first frame update
     void Start()
     {
         lt = GetComponent<Light>();
-        color = new Color(1, 1, 1, 255);
-        lt.intensity = 100;
+        
+         color = new Color(1, 1, 1, 255);
     }
 
     // Update is called once per frame
@@ -30,19 +29,12 @@ public class horizonsita : MonoBehaviour
             color = new Color(0, 0, 1, 255);
         }else if(Input.GetKeyDown(KeyCode.W)){
             color = new Color(1, 1, 1, 255);
+        }else if(Input.GetKeyDown(KeyCode.O)){
+            color = new Color(1,0.4f,0.03f,255);
+        }else if(Input.GetKeyDown(KeyCode.P)){
+            color = new Color(1,0.02f,0.5f,255);
+        }else if(Input.GetKeyDown(KeyCode.Y)){
+            color = new Color(0.86f,1,0.02f,255);
         }
-        
-        // 矢印キー（↑↓）で光量が変わる
-        if(Input.GetKey(KeyCode.UpArrow)){
-            if(lt.intensity < 500){
-                lt.intensity += 10;
-            }
-        }else if(Input.GetKey(KeyCode.DownArrow)){
-            if(lt.intensity > 0){
-                lt.intensity -= 10;
-            }
-        } 
-
     }
-    
 }
