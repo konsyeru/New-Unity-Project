@@ -6,7 +6,7 @@ using UnityEditor;
 public class MoveSpotLight : MonoBehaviour
 {
 
-    GameObject SpotLight;
+    GameObject PinSpotLight;
     Mouse script; 
     string address = "Assets/Materials/Sphere.prefab";
     GameObject targetPrefab;
@@ -15,13 +15,13 @@ public class MoveSpotLight : MonoBehaviour
     void Start()
     {   
         script = GameObject.Find("Empty").GetComponent<Mouse>(); 
-        SpotLight = this.gameObject;
+        PinSpotLight = this.gameObject;
         targetPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(address);
     }
     
     IEnumerator Delay(){
         for (int i=0; i < script.mouse_pos.Length; i++){
-            SpotLight.transform.LookAt(script.mouse_pos[i]);
+            PinSpotLight.transform.LookAt(script.mouse_pos[i]);
             if (i == script.mouse_pos.Length-1){
                 script.mouse_pos = new Vector3[0];
             }

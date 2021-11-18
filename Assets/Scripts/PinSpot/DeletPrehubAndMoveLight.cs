@@ -8,7 +8,7 @@ public class DeletPrehubAndMoveLight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        script = GameObject.Find("SpotLight").GetComponent<MoveSpotLight>(); 
+        script = GameObject.Find("PinSpotLight").GetComponent<MoveSpotLight>(); 
     }
 
     // Update is called once per frame
