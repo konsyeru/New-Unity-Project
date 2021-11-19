@@ -29,7 +29,7 @@ public class LightChange : MonoBehaviour
         if(dropdown.value==0){
             for(int i = 0; i < 37;i++){
                 if(i == 0 || i > 4){
-                Object[i].GetComponent<Kouryou>().enabled = false;
+                //Object[i].GetComponent<Kouryou>().enabled = false;
                 }
             }
             //script.enabled = false;
