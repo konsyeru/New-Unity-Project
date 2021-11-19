@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5082303}
   - component: {fileID: 5082305}
   m_Layer: 0
-  m_Name: cl1 (5)
+  m_Name: cl10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,7 +215,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &5082305
 MonoBehaviour:
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 40443474}
   - component: {fileID: 40443476}
   m_Layer: 0
-  m_Name: cl1 (4)
+  m_Name: cl8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &40443476
 MonoBehaviour:
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 108502591}
   - component: {fileID: 108502592}
   m_Layer: 0
-  m_Name: "\u30DB\u30EA\u30BE\u30F3\u4E0A(3)"
+  m_Name: hh3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -694,7 +694,7 @@ GameObject:
   - component: {fileID: 120808281}
   - component: {fileID: 120808282}
   m_Layer: 0
-  m_Name: "\u30B9\u30DD\u30C3\u30C8\u30E9\u30A4\u30C8"
+  m_Name: splight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 175128821}
   - component: {fileID: 175128823}
   m_Layer: 0
-  m_Name: cl3
+  m_Name: cl5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -913,7 +913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &175128823
 MonoBehaviour:
@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: 213243850}
   - component: {fileID: 213243852}
   - component: {fileID: 213243853}
+  - component: {fileID: 213243854}
   m_Layer: 0
   m_Name: Empty
   m_TagString: Untagged
@@ -998,6 +999,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9585623891cd7d94287738ff5a4692c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &213243854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213243849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb765da46c546e44aa7cb9967ef5034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1603025141}
+  ObjectName:
+  - splight
+  - ss1
+  - ss2
+  - ss3
+  - ss4
+  - hl1
+  - hl2
+  - hl3
+  - hl4
+  - hl5
+  - hh1
+  - hh2
+  - hh3
+  - hh4
+  - hh5
+  - PinSpotLight
+  - frl1
+  - frl2
+  - frl3
+  - frl4
+  - frr1
+  - frr2
+  - frr3
+  - frr4
+  - cl1
+  - cl2
+  - cl3
+  - cl4
+  - cl5
+  - cl6
+  - cl7
+  - cl8
+  - cl9
+  - cl10
+  - cl11
+  - cl12
+  - cl13
+  Object:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &225604340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,7 +1708,7 @@ GameObject:
   - component: {fileID: 553519524}
   - component: {fileID: 553519525}
   m_Layer: 0
-  m_Name: "\u30DB\u30EA\u30BE\u30F3\u4E0A(2)"
+  m_Name: hh2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1900,7 +1990,7 @@ GameObject:
   - component: {fileID: 746133227}
   - component: {fileID: 746133228}
   m_Layer: 0
-  m_Name: "\u30DB\u30EA\u30BE\u30F3\u4E0A(1)"
+  m_Name: hh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2020,7 +2110,7 @@ GameObject:
   - component: {fileID: 759598099}
   - component: {fileID: 759598100}
   m_Layer: 0
-  m_Name: "\u30B5\u30B9 (2)"
+  m_Name: ss2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2345,7 +2435,7 @@ GameObject:
   - component: {fileID: 866950168}
   - component: {fileID: 866950169}
   m_Layer: 0
-  m_Name: "\u30DB\u30EA\u30BE\u30F3\u4E0A(5)"
+  m_Name: hh5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2717,7 +2807,7 @@ GameObject:
   - component: {fileID: 919678498}
   - component: {fileID: 919678500}
   m_Layer: 0
-  m_Name: cl7
+  m_Name: cl13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2797,7 +2887,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &919678500
 MonoBehaviour:
@@ -2922,7 +3012,7 @@ GameObject:
   - component: {fileID: 978218334}
   - component: {fileID: 978218336}
   m_Layer: 0
-  m_Name: cl1 (2)
+  m_Name: cl4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3002,7 +3092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &978218336
 MonoBehaviour:
@@ -3148,7 +3238,7 @@ GameObject:
   - component: {fileID: 1098895383}
   - component: {fileID: 1098895385}
   m_Layer: 0
-  m_Name: cl5
+  m_Name: cl9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,7 +3318,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1098895385
 MonoBehaviour:
@@ -3282,7 +3372,7 @@ GameObject:
   - component: {fileID: 1162454603}
   - component: {fileID: 1162454604}
   m_Layer: 0
-  m_Name: SpotLight
+  m_Name: PinSpotLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3413,7 +3503,7 @@ GameObject:
   - component: {fileID: 1168899716}
   - component: {fileID: 1168899718}
   m_Layer: 0
-  m_Name: cl2
+  m_Name: cl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3493,7 +3583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1168899718
 MonoBehaviour:
@@ -3743,7 +3833,7 @@ GameObject:
   - component: {fileID: 1239568357}
   - component: {fileID: 1239568359}
   m_Layer: 0
-  m_Name: cl4
+  m_Name: cl7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3823,7 +3913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1239568359
 MonoBehaviour:
@@ -3975,7 +4065,7 @@ GameObject:
   - component: {fileID: 1309656223}
   - component: {fileID: 1309656225}
   m_Layer: 0
-  m_Name: cl1 (6)
+  m_Name: cl12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4055,7 +4145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1309656225
 MonoBehaviour:
@@ -4082,7 +4172,7 @@ GameObject:
   - component: {fileID: 1320243075}
   - component: {fileID: 1320243076}
   m_Layer: 0
-  m_Name: "\u30DB\u30EA\u30BE\u30F3\u4E0A(4)"
+  m_Name: hh4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4402,7 +4492,7 @@ GameObject:
   - component: {fileID: 1391596622}
   - component: {fileID: 1391596624}
   m_Layer: 0
-  m_Name: cl1 (3)
+  m_Name: cl6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4482,7 +4572,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1391596624
 MonoBehaviour:
@@ -4509,7 +4599,7 @@ GameObject:
   - component: {fileID: 1454800405}
   - component: {fileID: 1454800406}
   m_Layer: 0
-  m_Name: "\u30B5\u30B9 (3)"
+  m_Name: ss3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4745,7 +4835,7 @@ GameObject:
   - component: {fileID: 1483456765}
   - component: {fileID: 1483456766}
   m_Layer: 0
-  m_Name: "\u30B5\u30B9 (4)"
+  m_Name: ss4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5414,7 +5504,7 @@ GameObject:
   - component: {fileID: 1707575708}
   - component: {fileID: 1707575710}
   m_Layer: 0
-  m_Name: cl6
+  m_Name: cl11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5494,7 +5584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1707575710
 MonoBehaviour:
@@ -5727,7 +5817,7 @@ GameObject:
   - component: {fileID: 1794712973}
   - component: {fileID: 1794712974}
   m_Layer: 0
-  m_Name: "\u30B5\u30B9 (1)"
+  m_Name: ss1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5968,7 +6058,7 @@ GameObject:
   - component: {fileID: 1960596283}
   - component: {fileID: 1960596285}
   m_Layer: 0
-  m_Name: cl1 (1)
+  m_Name: cl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6048,7 +6138,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 144, y: 0, z: 0}
 --- !u!114 &1960596285
 MonoBehaviour:
