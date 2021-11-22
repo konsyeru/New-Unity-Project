@@ -17,8 +17,6 @@ public class Kouryou : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
         // 矢印キー（↑↓）で光量が変わる
         if(Input.GetKey(KeyCode.UpArrow)){
             if(lt.intensity < 400){
