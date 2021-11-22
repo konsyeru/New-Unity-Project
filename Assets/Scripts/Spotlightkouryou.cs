@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SasuKouryou : MonoBehaviour
+public class Spotlightkouryou : MonoBehaviour
 {
-    Light lt;
     // Start is called before the first frame update
+    Light lt;
     void Start()
     {
         lt = GetComponent<Light>();
@@ -18,7 +18,6 @@ public class SasuKouryou : MonoBehaviour
         if(Input.GetKey(KeyCode.UpArrow)){
             if(lt.intensity < 25){
                 lt.intensity += 1;
-                Debug.Log(lt.intensity);
             }
         }else if(Input.GetKey(KeyCode.DownArrow)){
             if(lt.intensity > 0){

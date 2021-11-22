@@ -20,7 +20,7 @@ public class MoveSpotLight : MonoBehaviour
     }
     
     IEnumerator Delay(){
-        for (int i=0; i < script.mouse_pos.Length; i++){
+        for (int i = 0; i < script.mouse_pos.Length; i++){
             PinSpotLight.transform.LookAt(script.mouse_pos[i]);
             if (i == script.mouse_pos.Length-1){
                 script.mouse_pos = new Vector3[0];
