@@ -18,7 +18,6 @@ public class SasuKouryou : MonoBehaviour
         if(Input.GetKey(KeyCode.UpArrow)){
             if(lt.intensity < 25){
                 lt.intensity += 1;
-                Debug.Log(lt.intensity);
             }
         }else if(Input.GetKey(KeyCode.DownArrow)){
             if(lt.intensity > 0){
