@@ -18,6 +18,10 @@ public class ContentInformation : MonoBehaviour
     void Start()
     {
         Content = GameObject.Find("Canvas").transform.Find("Scroll View/Viewport/Content").gameObject;  //Contentを取得
+    }
+
+    void ArrayPreparation(){ //配列を用意
+
         ChildCount = Content.transform.childCount;  //Contentの子オブジェクトの要素数を取得
         ChildObject = new GameObject[ChildCount];  //Content子オブジェクトを格納するための配列
 
@@ -25,7 +29,7 @@ public class ContentInformation : MonoBehaviour
             ChildObject[i] = Content.transform.GetChild(i).gameObject;
         }
 
-        //配列の用意
+        //配列の要素数の初期化
         if(LightChange.DropdownValue == 0){  //SS
             TimeSS = new int[ChildCount , 2];
             IntensitySS = new float[ChildCount];
@@ -66,6 +70,9 @@ public class ContentInformation : MonoBehaviour
     }
 
     public void Click(){
+
+        ArrayPreparation(); //配列を用意
+
         if(LightChange.DropdownValue == 0){        //SS
             SaveInformation(TimeSS, IntensitySS);
         }else if(LightChange.DropdownValue == 1){  //SP
