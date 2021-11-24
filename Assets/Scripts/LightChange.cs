@@ -8,6 +8,7 @@ public class LightChange : MonoBehaviour
 
     // Start is called before the first frame update
     [SerializeField]public Dropdown dropdown;
+    public static int DropdownValue;
     
     public string[] ObjectName = {"splight","ss1","ss2","ss3","ss4",
     "hl1","hl2","hl3","hl4","hl5","hh1","hh2","hh3","hh4","hh5",
@@ -18,7 +19,6 @@ public class LightChange : MonoBehaviour
   
     void Start()
     {
-
         for(int i = 0; i < 37; i++){
             Object[i] = GameObject.Find(ObjectName[i]);
         }
@@ -27,6 +27,8 @@ public class LightChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         DropdownValue = dropdown.value;
+
         if(dropdown.value == 0){
             for(int i = 0; i < 37; i++){
                 if(i == 0){
