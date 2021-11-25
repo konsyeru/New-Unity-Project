@@ -11,7 +11,7 @@ public class ColorChange : MonoBehaviour
     {
         lt = GetComponent<Light>();
         
-         color = new Color(1, 1, 1, 255);
+        color = new Color(1, 1, 1, 255);
     }
 
     // Update is called once per frame

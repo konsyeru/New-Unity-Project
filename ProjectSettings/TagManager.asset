@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - splight
+  - ss
+  - h
+  - pinspotlight
+  - fr
+  - cl
   layers:
   - Default
   - TransparentFX

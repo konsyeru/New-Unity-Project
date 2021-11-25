@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private int minute;
-	[SerializeField] private float seconds;
+    public int minute;
+	public float seconds;
     // Start is called before the first frame update
     private float oldSeconds;
     private Text timerText;

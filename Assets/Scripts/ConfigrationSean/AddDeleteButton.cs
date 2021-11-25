@@ -19,7 +19,7 @@ public class AddDeleteButton : MonoBehaviour
     }
 
     public void AddClick(){
-        if(LightChange.DropdownValue != 3){  //HL以外
+        if(LightChange.DropdownValue != 2 && LightChange.DropdownValue != 3){  //Pin, HL以外
             Panel = (GameObject)Instantiate(targetPrefab,Content.transform.position, Quaternion.identity);
             Panel.transform.SetParent(Content.transform, false);
             Panel.transform.Find("Dropdown").gameObject.SetActive (false);

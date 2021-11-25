@@ -18,7 +18,7 @@ public class LoadData : MonoBehaviour
     }
 
     void AddPanel(){
-        if(LightChange.DropdownValue != 3){  //HL以外
+        if(LightChange.DropdownValue != 2 && LightChange.DropdownValue != 3){  //Pin, HL以外
             Panel = (GameObject)Instantiate(targetPrefab,Content.transform.position, Quaternion.identity);
             Panel.transform.SetParent(Content.transform, false);
             Panel.transform.Find("Dropdown").gameObject.SetActive (false);
@@ -40,8 +40,8 @@ public class LoadData : MonoBehaviour
             //Intensity
             PanlObject.transform.Find("Slider").gameObject.GetComponent<Slider>().value = ContentInformation.Intensity[LightChange.DropdownValue][i];
              //color
-            if(LightChange.DropdownValue == 3){
-                PanlObject.transform.Find("Dropdown").gameObject.GetComponent<TMP_Dropdown>().value = ContentInformation.ColorHL[i];
+            if(LightChange.DropdownValue == 2 || LightChange.DropdownValue == 3){
+                PanlObject.transform.Find("Dropdown").gameObject.GetComponent<TMP_Dropdown>().value = ContentInformation.Color[LightChange.DropdownValue - 2][i];
             }
         }
     }

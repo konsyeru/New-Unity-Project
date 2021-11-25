@@ -10,9 +10,9 @@ public class ContentInformation : MonoBehaviour
     public int ChildCount;
     static public int[] ChildCounts = {0, 0, 0, 0, 0, 0}; 
     public GameObject[] ChildObject;
-    static public int[][][] Time = new int[5][][];  //TimeSS, TimeSP, TimeHL, TimeSL, TimeFR;
-    static public float[][] Intensity = new float[5][]; //IntensitySS, IntensitySP, IntensityHL, IntensitySL, IntensityFR;
-    static public int[] ColorHL;
+    static public int[][][] Time = new int[6][][];  
+    static public float[][] Intensity = new float[6][]; 
+    static public int[][] Color = new int[2][];
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +34,8 @@ public class ContentInformation : MonoBehaviour
         Time[LightChange.DropdownValue] = new int[ChildCount][];
         Intensity[LightChange.DropdownValue] = new float[ChildCount];
         ChildCounts[LightChange.DropdownValue] = ChildCount;
-        if(LightChange.DropdownValue == 3){  //HL
-            ColorHL = new int[ChildCount];
+        if(LightChange.DropdownValue == 2 || LightChange.DropdownValue == 3){  //pin, HL
+            Color[LightChange.DropdownValue - 2] = new int[ChildCount];
         }
 
     }
@@ -53,8 +53,8 @@ public class ContentInformation : MonoBehaviour
             //Intensity
             Intensity[LightChange.DropdownValue][i] = ChildObject[i].transform.Find("Slider").gameObject.GetComponent<Slider>().value;
             //color
-            if(LightChange.DropdownValue == 3){
-                ColorHL[i] = ChildObject[i].transform.Find("Dropdown").gameObject.GetComponent<TMP_Dropdown>().value;
+            if(LightChange.DropdownValue == 2 || LightChange.DropdownValue == 3){
+                Color[LightChange.DropdownValue - 2][i] = ChildObject[i].transform.Find("Dropdown").gameObject.GetComponent<TMP_Dropdown>().value;
             }
         }
     }
