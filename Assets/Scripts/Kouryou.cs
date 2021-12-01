@@ -11,7 +11,7 @@ public class Kouryou : MonoBehaviour
     void Start()
     {
         lt = GetComponent<Light>();
-        lt.intensity = 100;
+        lt.intensity = 30;
     }
 
     // Update is called once per frame
