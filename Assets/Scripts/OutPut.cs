@@ -21,6 +21,7 @@ public class OutPut : MonoBehaviour
     }
 
     public void OnClick(){
+        Sort();
         StreamWriter file = new StreamWriter(Path.Combine(DesktopPass, "Lighting Design.csv"), false, Encoding.UTF8);
         file.WriteLine(string.Format("{0}, {1}, {2}, {3}, {4}, {5}, {6}","Light name", "Start Time"," ", "End Time"," ", "Intensity", "Color"));
         for (int i = 0; i < Time.Length; i++){
@@ -38,4 +39,39 @@ public class OutPut : MonoBehaviour
         file.Close();
     }
 
+    void Sort(){
+        int Count = 0;
+        int b = 0;
+        int[] Bubble = new int [Count];
+
+        for(int a = 0; a < 6; a++){
+            Count = Count + ContentInformation.ChildCounts[a];
+        }
+
+        for(int i = 0; i < Time.Length; i++){
+            for(int j = 0; j < Time[i].Length; j++){
+                Bubble[b] = Time[i][j][0];
+                Bubble[b + 1] = Time[i][j][1];
+                b++;
+            }
+        }
+
+        int Temp;
+
+        for(int k = 0; k < Count; k++){
+            for(int l = Count; l >= 0; l--){
+                if(Bubble[k] >= Bubble[l]){
+                    Temp = Bubble[l - 1];
+                    Bubble[l - 1] = Bubble[l];
+                    Bubble[l] = Temp;
+                }
+            }
+        }
+
+        for(int c = 0; c > Count; c++){
+            Debug.Log(Bubble[c]);
+        }
+        
+
+    }
 }
