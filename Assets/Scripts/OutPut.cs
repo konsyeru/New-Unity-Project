@@ -41,26 +41,49 @@ public class OutPut : MonoBehaviour
 
     void Sort(){
         int Count = 0;
-        int b = 0;
-        int[] Bubble = new int [Count];
+        int b = None;
+        
 
         for(int a = 0; a < 6; a++){
             Count = Count + ContentInformation.ChildCounts[a];
         }
 
+        Count = Count * 2;
+        int[] Bubble = new int [Count];
+        Debug.Log(Count);
+
+        /*
         for(int i = 0; i < Time.Length; i++){
             for(int j = 0; j < Time[i].Length; j++){
                 Bubble[b] = Time[i][j][0];
                 Bubble[b + 1] = Time[i][j][1];
-                b++;
+                if(b < Count - 2){
+                    b += 2;
+                }
             }
+        }
+        */
+
+        for(int i = 0; i < Time.Length; i++){
+            for(int j = 0; j < Time[i].Length; j++){
+                for(int k = 0; k < 2; k++){
+                    b = Time[i].Length;
+                    Bubble[i * Time[i].Length + j] = Time[i][j][k];
+                    Debug.Log(Bubble[b]);
+                    b++;
+                }
+            }
+        }
+
+        for(int c = 0; c < Count - 1; c++){
+            Debug.Log(c.ToString() + ":" + Bubble[c].ToString());
         }
 
         int Temp;
 
-        for(int k = 0; k < Count; k++){
-            for(int l = Count; l >= 0; l--){
-                if(Bubble[k] >= Bubble[l]){
+        for(int k = 0; k < Count - 1; k++){
+            for(int l = Count - 1; l > k; l--){
+                if(Bubble[l - 1] > Bubble[l]){
                     Temp = Bubble[l - 1];
                     Bubble[l - 1] = Bubble[l];
                     Bubble[l] = Temp;
@@ -68,7 +91,7 @@ public class OutPut : MonoBehaviour
             }
         }
 
-        for(int c = 0; c > Count; c++){
+        for(int c = 0; c < Count - 1; c++){
             Debug.Log(Bubble[c]);
         }
         
